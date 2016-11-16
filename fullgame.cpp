@@ -2,6 +2,7 @@
 #include <cstdlib>
 using namespace std;
 
+// This function produces a random character, and compares it to your input. If it matches then it prints true and you get a hit.
 bool HorM(char a){
     char p[3] = {'F', 'C', 'S'};
     char randomp = p[rand()%3];
@@ -9,6 +10,7 @@ bool HorM(char a){
     else return false;
 }
 
+// This function prints out the position of your base runners
 void print(int b){
 
     typedef char bases[5][6];
@@ -86,6 +88,7 @@ void print(int b){
     };
 }
 
+//The main function runs through the entire game, and prints your score out at the end
 int main(){
     int strikes = 0, hits = 0, runners = 0, runs = 0, outs = 0;
     string n[5];
